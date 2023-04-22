@@ -51,7 +51,7 @@ def Train(models, epochs, train_dataset, train_loader, optimizers, device, model
     print("===================================Training Started===================================")
     n_iter = 0
     for epoch in range(resume+1, epochs+1):
-        print('*************************************************888epoch: ', epoch)
+        print('*************************************************epoch: ', epoch)
         b = 0
         for X_list in train_loader:
             print('iteration: ', n_iter)
