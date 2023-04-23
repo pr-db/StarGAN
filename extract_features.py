@@ -9,6 +9,8 @@ import h5py
 import librosa
 import numpy as np
 import soundfile as sf
+import matplotlib.pyplot as plt
+
 
 from tqdm import tqdm
 
@@ -50,9 +52,7 @@ def logmelfilterbank(audio,
     spc = np.abs(x_stft).T  # (#frames, #bins)
 
     # get mel basis
-    fmin = 0 if fmin is None else fmin
-    fmax = sampling_rate / 2 if fmax is None else fmax
-    mel_basis = librosa.filters.mel(sampling_rate, fft_size, num_mels, fmin, fmax)
+    mel_basis = librosa.filters.mel(sampling_rate, fft_size, num_mels, fmin, sampling_rate/2)
 
     return np.log10(np.maximum(eps, np.dot(spc, mel_basis.T)))
 
