@@ -80,7 +80,7 @@ def extract_melspec(src_filepath, dst_filepath, kwargs):
                                         fmin=fmin, fmax=fmax, num_mels=num_mels)
         melspec_raw = melspec_raw.astype(np.float32)
         melspec_raw = melspec_raw.T # n_mels x n_frame
-
+			
         if not os.path.exists(os.path.dirname(dst_filepath)):
             os.makedirs(os.path.dirname(dst_filepath), exist_ok=True)
         with h5py.File(dst_filepath, "w") as f:
