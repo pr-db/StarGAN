@@ -1,8 +1,2 @@
-.vscode/**/*   
-**/.vscode
-
-dump/
-model/   
-logs/   
+dump/ 
 out/   
-

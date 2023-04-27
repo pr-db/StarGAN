@@ -1,0 +1,4 @@
+04/24/2023 03:41:50 (train:118) INFO: epoch 19, mini-batch 1: AdvLoss_d=0.0167, AdvLoss_g=-0.0219, GradLoss_d=0.2182, ClsLoss_d=0.1887, ClsLoss_g=0.1887
+04/24/2023 03:41:50 (train:120) INFO: epoch 19, mini-batch 1: CycLoss=0.5503, RecLoss=0.5320
+04/24/2023 03:52:55 (train:118) INFO: epoch 19, mini-batch 1: AdvLoss_d=0.0237, AdvLoss_g=-0.0388, GradLoss_d=0.5601, ClsLoss_d=0.1886, ClsLoss_g=0.1887
+04/24/2023 03:52:55 (train:120) INFO: epoch 19, mini-batch 1: CycLoss=0.5484, RecLoss=0.5322
