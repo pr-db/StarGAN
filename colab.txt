@@ -1,5 +1,0 @@
-from google.colab import drive
-drive.mount('/content/gdrive')
-%cd gdrive/MyDrive/StarGAN
-!pip install -r requirements.txt
-!./recipes/run_train.sh -g 0 
