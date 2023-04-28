@@ -14,7 +14,7 @@ db_dir="../CMU_data/test"
 dataset_name="mydataset"
 gpu=0
 checkpoint=0
-vocoder_type="hifigan.v1"
+vocoder_type="parallel_wavegan.v1"
 
 while getopts "g:e:c:v:" opt; do
        case $opt in
